@@ -1,0 +1,51 @@
+.main {
+    grid-template-areas:
+    "h  h  h"
+    "a1 a2 a3"
+    "f  f  f";
+    display: grid;
+    grid-gap: 10px;
+    max-width: 1600px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+.block {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.header {
+    grid-area: h;
+}
+
+.column1 {
+    grid-area: a1;
+}
+
+.content {
+    grid-area: a2;
+}
+
+.column2 {
+    grid-area: a3;
+}
+
+.footer {
+    grid-area: f;
+}
+
+.menu {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        grid-template-areas:
+        "h"
+        "a1"
+        "a2"
+        "a3"
+        "f";
+    }
+}
